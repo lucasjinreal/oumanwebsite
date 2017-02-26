@@ -17,7 +17,7 @@ def businesscontact(request):
             return render(request, 'contact_success.html', {'results': contact_name + contact_occupation})
         else:
             form = BusinessContactForm()
-    return render('index.html', {'form': form})
+    return HttpResponse("系统不支持内置表单提交，请在浏览器中打开。")
 
 
 def intelligent_judge(contact_name_):
