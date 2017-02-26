@@ -1,0 +1,17 @@
+[2017-02-26 19:34:16 +0800] [6971] [INFO] Starting gunicorn 19.6.0
+[2017-02-26 19:34:16 +0800] [6971] [INFO] Listening at: http://127.0.0.1:8100 (6971)
+[2017-02-26 19:34:16 +0800] [6971] [INFO] Using worker: sync
+[2017-02-26 19:34:16 +0800] [6974] [INFO] Booting worker with pid: 6974
+[2017-02-26 19:34:16 +0800] [6975] [INFO] Booting worker with pid: 6975
+[2017-02-26 19:34:17 +0800] [6977] [INFO] Booting worker with pid: 6977
+[2017-02-26 19:34:55 +0800] [6971] [INFO] Handling signal: term
+[2017-02-26 11:34:55 +0000] [6974] [INFO] Worker exiting (pid: 6974)
+[2017-02-26 11:34:55 +0000] [6975] [INFO] Worker exiting (pid: 6975)
+[2017-02-26 11:34:55 +0000] [6977] [INFO] Worker exiting (pid: 6977)
+[2017-02-26 19:34:55 +0800] [6971] [INFO] Shutting down: Master
+[2017-02-26 19:35:47 +0800] [7089] [INFO] Starting gunicorn 19.6.0
+[2017-02-26 19:35:47 +0800] [7089] [INFO] Listening at: http://127.0.0.1:8100 (7089)
+[2017-02-26 19:35:47 +0800] [7089] [INFO] Using worker: sync
+[2017-02-26 19:35:47 +0800] [7092] [INFO] Booting worker with pid: 7092
+[2017-02-26 19:35:47 +0800] [7093] [INFO] Booting worker with pid: 7093
+[2017-02-26 19:35:47 +0800] [7094] [INFO] Booting worker with pid: 7094
