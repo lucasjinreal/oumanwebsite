@@ -1,0 +1,127 @@
+#banner{
+    height: 50rem;
+    width: 100%;
+    background: url("./../media/banner2.jpg");
+    background-size: cover;
+}
+#banner .transparent-mask{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1, 1, 1, 0.84);
+}
+#banner .inner{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20rem 0 5rem 0;
+    color: #fdfdfd;
+}
+#banner .inner p{
+    margin-top: 20rem;
+}
+
+/*content start*/
+#content{
+    width:100%;
+}
+/*section1 start*/
+.sec-1{
+    width: 100%;
+    background-color: #f6f6f6;
+}
+.sec-1 .header-wrapper{
+    padding: 5rem 0 4rem 0;
+    text-align: center;
+}
+.sec-1  .card-group{
+    max-width: 80%;
+    margin: 1rem auto 4rem auto;
+}
+.sec-1  .card-group .card{
+    width: 13rem;
+    height: 15rem;
+    margin: 1rem;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 0.3rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem #bfbfbf;
+    -webkit-transition:  0.6s;
+    -moz-transition:  0.6s;
+    -ms-transition:  0.6s;
+    -o-transition:  0.6s;
+    transition:  0.6s;
+}
+.sec-1  .card-group .card:hover{
+    box-shadow: 0.2rem 0.3rem 0.3rem #bfbfbf;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);;
+}
+.sec-1  .card-group .card img{
+    width: auto;
+    height: 12rem;
+    background-size: cover;
+}
+.sec-1  .card-group .card .text-area{
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 90%;
+    text-align: left;
+    padding-left: 0.3rem;
+}
+.sec-1  .card-group .card .text-area h2{
+    font-size: 0.9rem;
+    margin: 1.2rem auto;
+}
+.sec-1  .card-group .card .text-area p{
+    font-size: 0.6rem;
+    margin-top: 0.1rem;
+    letter-spacing: 0px;
+}
+.sec-1  .card-group .card .text-area p:nth-child(1){
+    color: #3e8f3e;
+}
+/*section1 stop*/
+/*section2 start*/
+.sec-2{
+    width: 100%;
+    background-color: #080404;
+    color: white;
+}
+.sec2 .inner{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+.sec-2 .inner .header-wrapper{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem 0 1rem 0;
+}
+.sec-2 .inner .header-wrapper h2{
+    font-size: 1.4rem;
+}
+.sec-2 .inner .header-wrapper p{
+    font-size: 1.0rem;
+}
+.sec-2 .inner .content-wrapper{
+    width: 60%;
+    margin: 0 auto 10rem;
+    text-align: center;
+    overflow: hidden;
+}
+.sec-2 .business-group{
+    margin: 10rem auto 5rem auto;
+    width: 16rem;
+}
+.sec-2 .business-group p{
+    font-size: 1.0rem;
+    margin-top: 2rem;
+}
+.sec-2 .business-group i{
+    font-size: 4rem;
+}
+
+/*content stop*/

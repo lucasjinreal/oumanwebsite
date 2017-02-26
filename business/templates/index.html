@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="apple-mobile-web-app-capable" content="yes"/>
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <title>欧曼科技官网</title>
+      {% load static %}
+      <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+      <link href="{% static "css/common.css" %}" rel="stylesheet">
+      <link href="{% static "css/index.css" %}" rel="stylesheet">
+      <link href="{% static "font-awesome-4.7.0/css/font-awesome.min.css" %}" rel="stylesheet">
+      <link href="{% static "dist/aos.css" %}" rel="stylesheet">
+      <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+      <script src="{% static "js/bootstrap.min.js" %}"></script>
+      <script src="{% static "dist/aos.js" %}"></script>
+  </head>
+  <body>
+  <header>
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <div class="navbar-header">
+              <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                  <span class="sr-only">Toggle Navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a href="##" class="navbar-brand"><img src="{% static "media/oumanlogo.png" %}" ></a>
+          </div>
+          <div class="collapse navbar-collapse navbar-responsive-collapse">
+              <ul class="nav navbar-nav">
+                  <li><a href="{% url "index" %}">首页</a></li>
+                  <li><a href="{% url "comingsoon" %}">产品</a></li>
+                  <li><a href="{% url "business" %}">业务</a></li>
+                  <li><a href="##">新闻报道</a></li>
+                  <li><a href="{% url "team" %}">关于我们</a></li>
+              </ul>
+          </div>
+      </nav>
+  </header>
+  <div id="banner">
+      <div class="transparent-mask">
+          <div class="inner">
+              <h1 aos="flip-up" aos-easing="ease" aos-delay="400">可能是东半球最牛逼的学生创业公司</h1>
+              <p aos="zoom-in" aos-easing="ease" aos-delay="600">一家做大学生市场和技术外包的科技公司，我们不仅开发软件，同时也创造硬件产品</p>
+              <a href="business.html"><button aos="fade-up" aos-easing="ease" aos-delay="600">浏览产品</button></a>
+              <div class="more">
+                  <i class="fa fa-chevron-down fa-2x" aria-hidden="true" aos="fade-up" aos-easing="ease" aos-delay="440"></i>
+                  <p aos="fade-up" aos-easing="ease" aos-delay="400">更多</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div id="content" class="container-fluid">
+      <section class="sec-1">
+          <div class="wrapper">
+              <div class="inner">
+                  <h2 aos="fade-up" aos-easing="ease" aos-delay="400">优美的设计，高精尖的技术，一流的团队是根植我们的基因</h2>
+                  <div class="sub-heading">
+                      <p aos="fade-up" aos-easing="ease" aos-delay="600">欧曼创立之初，便以建造充满美感的产品作为自身的使命</p>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-4 icon-wrapper" aos="flip-up" aos-easing="ease" aos-delay="400">
+                      <span class="icon"><i class="fa fa-eercast fa-3x"></i></span>
+                  </div>
+                  <div class="col-md-4 icon-wrapper" aos="flip-right" aos-easing="ease" aos-delay="440">
+                      <span class="icon"><i class="fa fa-apple fa-3x"></i></span>
+                  </div>
+                  <div class="col-md-4 icon-wrapper" aos="flip-left" aos-easing="ease" aos-delay="460">
+                      <span class="icon"><i class="fa fa-code fa-3x"></i></span>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!--section2 开始-->
+      <section class="sec-2">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-md-5 col-sm-12">
+                      <img src="{% static "media/sec2-1.svg" %}" aos="fade-up" aos-easing="ease" aos-delay="400">
+                  </div>
+                  <div class="col-md-7 col-sm-12">
+                      <div class="text-area">
+                          <h2 aos="slide-left" aos-easing="ease" aos-delay="400">属于欧曼的年轻战场</h2>
+                          <p aos="flip-up" aos-easing="ease" aos-delay="440">我们已经有三年之久的设计历史，
+                              从创立之初的细思微雕到如今的运筹帷幄，
+                              一气呵成，我们在不断的升级进化，不断完善产品和技术，砥砺前行，我们对设计的追求从未改变</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!--section2 结束-->
+      <!--section3 start-->
+      <section class="sec-3">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-md-4">
+                      <div class="text-area">
+                          <h2 aos="slide-right" aos-easing="ease" aos-delay="400">我们雕琢互联网产品</h2>
+                          <p aos="slide-right" aos-easing="ease" aos-delay="440">一群科技狂的挚爱，除了科技的酷炫与神奇，还有美丽动人的设计也不可或缺，</p>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div style="background-color: #1b6d85;width: 50%;height: inherit;"></div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!--section3 stop-->
+      <!--section4 start-->
+      <section class="sec-4">
+          <div class="head-wrapper">
+              <h2 aos="slide-up" aos-easing="ease" aos-delay="400">为什么选择欧曼</h2>
+              <p aos="slide-up" aos-easing="ease" aos-delay="440">我们是一家学生创业公司，技术上不输于大公司，却是用心做产品</p>
+          </div>
+          <div class="card-group clear-fix">
+              <div class="card" aos="slide-up" aos-easing="ease" aos-delay="350">
+                  <h2>设计美观</h2>
+                  <p>欧曼拥有专业的设计师团队，对产品的打磨细致严谨，我们当之无愧</p>
+              </div>
+              <div class="card" aos="slide-up" aos-easing="ease" aos-delay="470">
+                  <h2>内容丰富</h2>
+                  <p>我们也拥有一流的内容团队，我们为客户提供内容输出服务，我们有一流的编辑和记者，这是我们的优势所在</p>
+              </div>
+              <div class="card" aos="slide-up" aos-easing="ease" aos-delay="480">
+                  <h2>社交元素</h2>
+                  <p>欧曼的很多产品融入了社交元素，这让我们走得更近，对于技术外包项目我们也可以轻而易举的实现它，让您的产品牢牢的锁住用户的心</p>
+              </div>
+              <div class="card" aos="slide-up" aos-easing="ease" aos-delay="500">
+                  <h2>定制化</h2>
+                  <p>欧曼一直以追求自由和完美自居，我们力求个性化，对待产品同样如此，一款好的产品，定制功能是核心，而我们在这方面写了很多功夫</p>
+              </div>
+          </div>
+      </section>
+      <!--section4 stop-->
+      <!--section5 start-->
+      <section class="sec-5">
+          <div class="inner">
+              <div class="header-wrapper">
+                  <h2>联系我们</h2>
+                  <p>我们期待与您的合作</p>
+              </div>
+              <div class="container-fluid">
+                  <div class="row">
+                      <form action="/businesscontact/" method="post">
+                      {% csrf_token %}
+                          <div class="col-md-4 col-sm-12">
+                              <div class="input-group">
+                                  <p aos="slide-up" aos-easing="ease" aos-delay="300">您的姓名：</p>
+                                  <input type="text" name="contact_name" aos="slide-up" aos-easing="ease"
+                                         aos-delay="350"
+                                         placeholder="请输入您的姓名">
+                                  <p aos="slide-up" aos-easing="ease" aos-delay="300">您的职位：</p>
+                                  <input type="text" name="contact_occupation" aos="slide-up" aos-easing="ease"
+                                         aos-delay="380" placeholder="请输入您的职位">
+                                  <p aos="slide-up" aos-easing="ease" aos-delay="300" >您所属公司：</p>
+                                  <input type="text" name="contact_company" aos="slide-up" aos-easing="ease"
+                                         aos-delay="400" placeholder="请输入您所在的公司名称">
+                              </div>
+                          </div>
+                          <div class="col-md-4 col-sm-12">
+                              <div class="input-group">
+                                  <p aos="slide-up" aos-easing="ease" aos-delay="300">您的联系邮箱：</p>
+                                  <input type="text" name="contact_email" aos="slide-up" aos-easing="ease"
+                                         aos-delay="350" placeholder="请输入您的邮箱">
+                                  <p aos="slide-up" aos-easing="ease" aos-delay="300">您的手机号码：</p>
+                                  <input type="text" name="contact_phone" aos="zoom-in" aos-easing="ease"
+                                         aos-delay="380" placeholder="请输入您的手机号码">
+
+                              </div>
+                          </div>
+                          <div class="col-md-4 col-sm-12">
+                              <div class="right-content">
+                                  <p>商务合作事项：</p>
+                                  <textarea name="contact_detail" aos="zoom-in" aos-easing="ease" aos-delay="380"
+                                            placeholder="简要说明商务合作事宜，如iOS APP开发" required></textarea>
+                                  <button type="submit" aos="zoom-in" aos-easing="ease" aos-delay="380">提交</button>
+                                  <p><i class="fa fa-coffee"></i> 我们不会向第三方透露您的任何信息，收到您的留言我们会在一个工作日内通过邮箱或者手机联系您</p>
+                                  {% if results %}
+                                      <p>{{ results }}, 提交成功，感谢您的留言信息！</p>
+                                  {% endif %}
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!--section5 stop-->
+  </div>
+
+  <footer class="container-fluid">
+      <div class="row">
+          <div class="col-md-8 col-sm-12 col-xs-12">
+              <div class="link-group">
+                  <div class="col-md-3 col-sm-6 col-xs-6 links">
+                      <h3>友情链接</h3>
+                      <ul>
+                          <li><a href="#">腾讯</a></li>
+                          <li><a href="#">微博</a></li>
+                          <li><a href="#">长沙校园</a></li>
+                          <li><a href="#">DeepX</a></li>
+                          <li><a href="#">新智元</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-xs-6 links">
+                      <h3>公司简介</h3>
+                      <ul>
+                          <li><a href="#">欧曼简介</a></li>
+                          <li><a href="#">创始团队</a></li>
+                          <li><a href="#">天使投资人</a></li>
+                          <li><a href="#">发展历程</a></li>
+                          <li><a href="#">业务简介</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-xs-6 links">
+                      <h3>招贤纳士</h3>
+                      <ul>
+                          <li><a href="#">欧曼团队</a></li>
+                          <li><a href="#">薪资福利</a></li>
+                          <li><a href="#">工作岗位</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-xs-6 links">
+                      <h3>黑科技</h3>
+                      <ul>
+                          <li><a href="#">欧曼神盾局</a></li>
+                          <li><a href="#">入驻欧曼创客科技</a></li>
+                          <li><a href="#">联系我们</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 col-sm-12 col-xs-12">
+              <div class="qrcode-group">
+                  <div class="qrcode">
+                      <img src="{% static "media/oumanxy.jpg" %}" width="80" height="80">
+                      <p>关注欧曼校园微信公众号</p>
+                  </div>
+                  <div class="qrcode">
+                      <img src="{% static "media/hr.jpg" %}" width="80" height="80">
+                      <p>HR等你来调戏</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="sub-info">
+          <div class="inner">
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-md-6 contact">
+                          <p><i class="fa fa-qq"></i> 欧曼创新创业大本营 373987228</p>
+                          <p><i class="fa fa-wechat"></i> 市场总经理 jintianiloveu</p>
+                          <p><i class="fa fa-phone"></i>  商业合作 15116123160</p>
+                      </div>
+                      <div class="col-md-6 address">
+                          <p>地址：长沙市雨花区凯通国际城</p>
+                          <p>办公地址：长沙市中南大学创新创业园基地101室</p>
+                          <p>邮编：410083</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="sub-footer">
+          <ul class="share-group">
+              <li><i class="fa fa-google-plus fa-2x"></i></li>
+              <li><i class="fa fa-github fa-2x"></i></li>
+              <li><i class="fa fa-wechat fa-2x"></i></li>
+              <li><i class="fa fa-weibo fa-2x"></i></li>
+              <li><i class="fa fa-facebook-square fa-2x"></i></li>
+          </ul>
+          <div class="copyright">
+              &copy 2017 欧曼信息科技有限公司
+          </div>
+      </div>
+  </footer>
+  <script type="text/javascript">
+      AOS.init({
+          easing: 'ease-out-back',
+          duration: 1000,
+          once: false,
+      });
+  </script>
+  </body>
+</html>

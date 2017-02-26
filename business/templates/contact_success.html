@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>提交成功</title>
+    {% load static %}
+    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+    <link href="{% static "css/common.css" %}" rel="stylesheet">
+    <link href="{% static "css/contact_success.css" %}" rel="stylesheet">
+    <link href="{% static "font-awesome-4.7.0/css/font-awesome.min.css" %}" rel="stylesheet">
+    <link href="{% static "dist/aos.css" %}" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+    <script src="{% static "dist/aos.js" %}"></script>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <div class="navbar-header">
+              <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                  <span class="sr-only">Toggle Navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a href="##" class="navbar-brand"><img src="{% static "media/oumanlogo.png" %}" ></a>
+          </div>
+          <div class="collapse navbar-collapse navbar-responsive-collapse">
+              <ul class="nav navbar-nav">
+                  <li><a href="{% url "index" %}">首页</a></li>
+                  <li><a href="{% url "comingsoon" %}">产品</a></li>
+                  <li><a href="{% url "business" %}">业务</a></li>
+                  <li><a href="##">新闻报道</a></li>
+                  <li><a href="{% url "team" %}">关于我们</a></li>
+              </ul>
+          </div>
+      </nav>
+</header>
+<div id="banner">
+    <div class="inner">
+        <i aos="flip-up" aos-easing="ease" aos-delay="400" class="fa fa-check-circle"></i>
+        <h2 aos="flip-up" aos-easing="ease" aos-delay="420">提交成功</h2>
+        {% if results %}
+            <p aos="flip-up" aos-easing="ease" aos-delay="460">{{ results }}感谢您的留言，我们将在一个工作日内与您联系。</p>
+        {% endif %}
+    </div>
+</div>
+<footer class="container-fluid">
+    <div class="row">
+        <div class="col-md-8 col-sm-12 col-xs-12">
+            <div class="link-group">
+                <div class="col-md-3 col-sm-6 col-xs-6 links">
+                    <h3>友情链接</h3>
+                    <ul>
+                        <li><a href="#">腾讯</a></li>
+                        <li><a href="#">微博</a></li>
+                        <li><a href="#">长沙校园</a></li>
+                        <li><a href="#">DeepX</a></li>
+                        <li><a href="#">新智元</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 links">
+                    <h3>公司简介</h3>
+                    <ul>
+                        <li><a href="#">欧曼简介</a></li>
+                        <li><a href="#">创始团队</a></li>
+                        <li><a href="#">天使投资人</a></li>
+                        <li><a href="#">发展历程</a></li>
+                        <li><a href="#">业务简介</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 links">
+                    <h3>招贤纳士</h3>
+                    <ul>
+                        <li><a href="#">欧曼团队</a></li>
+                        <li><a href="#">薪资福利</a></li>
+                        <li><a href="#">工作岗位</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 links">
+                    <h3>黑科技</h3>
+                    <ul>
+                        <li><a href="#">欧曼神盾局</a></li>
+                        <li><a href="#">入驻欧曼创客科技</a></li>
+                        <li><a href="#">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+              <div class="qrcode-group">
+                  <div class="qrcode">
+                      <img src="{% static "media/oumanxy.jpg" %}" width="80" height="80">
+                      <p>关注欧曼校园微信公众号</p>
+                  </div>
+                  <div class="qrcode">
+                      <img src="{% static "media/hr.jpg" %}" width="80" height="80">
+                      <p>HR等你来调戏</p>
+                  </div>
+              </div>
+          </div>
+    </div>
+    <div class="sub-info">
+        <div class="inner">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 contact">
+                        <p><i class="fa fa-qq"></i> 欧曼创新创业大本营 373987228</p>
+                        <p><i class="fa fa-wechat"></i> 市场总经理 jintianiloveu</p>
+                        <p><i class="fa fa-phone"></i>  商业合作 15116123160</p>
+                    </div>
+                    <div class="col-md-6 address">
+                        <p>地址：长沙市雨花区凯通国际城</p>
+                        <p>办公地址：长沙市中南大学创新创业园基地101室</p>
+                        <p>邮编：410083</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sub-footer">
+        <ul class="share-group">
+            <li><i class="fa fa-google-plus fa-2x"></i></li>
+            <li><i class="fa fa-github fa-2x"></i></li>
+            <li><i class="fa fa-wechat fa-2x"></i></li>
+            <li><i class="fa fa-weibo fa-2x"></i></li>
+            <li><i class="fa fa-facebook-square fa-2x"></i></li>
+        </ul>
+        <div class="copyright">
+            &copy 2017 欧曼信息科技有限公司
+        </div>
+    </div>
+</footer>
+<script type="text/javascript">
+    AOS.init({
+        easing: 'ease-out-back',
+        duration: 1000,
+        once: false,
+    });
+</script>
+</body>
+</html>
