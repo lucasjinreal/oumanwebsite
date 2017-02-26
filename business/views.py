@@ -6,10 +6,6 @@ from business.forms import BusinessContactForm
 
 
 # Create your views here.
-def index(request):
-    return render(request, 'index.html', {'current_time': datetime.now()})
-
-
 def businesscontact(request):
     if request.method == 'POST':
         form = BusinessContactForm(request.POST)
@@ -19,6 +15,9 @@ def businesscontact(request):
             contact_name = intelligent_judge(contact_name)
             contact_occupation = form.cleaned_data['contact_occupation']
             return render(request, 'contact_success.html', {'results': contact_name + contact_occupation})
+        else:
+            form = BusinessContactForm()
+    return render('index.html', {'form': form})
 
 
 def intelligent_judge(contact_name_):

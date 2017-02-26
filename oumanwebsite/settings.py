@@ -25,7 +25,7 @@ SECRET_KEY = 'ncixhpl^0*x6*(85_qveamf5tb+-#vo_lmap#h+y7#+raxe)-h'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition

@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from business.views import index, businesscontact
+from business.views import businesscontact
 from django.views.generic import TemplateView
 
 urlpatterns = [
