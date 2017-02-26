@@ -24,5 +24,5 @@ urlpatterns = [
     url(r'^business/', TemplateView.as_view(template_name='business.html'), name='business'),
     url(r'^comingsoon/', TemplateView.as_view(template_name='comingsoon.html'), name='comingsoon'),
     url(r'^team/', TemplateView.as_view(template_name='team.html'), name='team'),
-    url(r'^index/', TemplateView.as_view(template_name='index.html'), name='index'),
+    url(r'^$', TemplateView.as_view(template_name='index.html'), name='index'),
 ]
