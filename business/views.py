@@ -45,5 +45,8 @@ def intelligent_judge(contact_name_):
     }
     if contact_name_ in my_relations:
         return my_relations[contact_name_]
+    elif not contact_name_:
+        return "default"
     else:
         return contact_name_
+
